@@ -1,6 +1,14 @@
 import { bootstrap } from "angular2/platform/browser";
 import { Component } from "angular2/core";
 
+
+/*
+ * Components
+ */
+import {SelectComponent} from 'components/SelectComponent';
+
+
+
 @Component({
   selector: 'simple-api',
   template: `
@@ -10,6 +18,9 @@ import { Component } from "angular2/core";
       <li>Will need an Input to call API</li>
       <li>Will need a Service to call that API</li>
     </ul>
+    <div>
+      <select-component></select-component>
+    </div>
   </div>
   `
 })
