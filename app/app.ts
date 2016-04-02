@@ -5,13 +5,14 @@ import { Component } from "angular2/core";
 /*
  * Components
  */
+
+//import {HelloWorld} from 'angular2-library-example/components';
 import {SelectComponent} from 'components/SelectComponent';
 
 
-
 @Component({
-  selector: 'simple-api',
-  template: `
+    selector: 'simple-api',
+    template: `
   <div>
     <h1>Simple API</h1>
     <ul>

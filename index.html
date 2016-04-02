@@ -1,6 +1,6 @@
 <!doctype html>
 <html>
-  <head>
+<head>
     <title>Simple API</title>
     <!-- Libraries -->
     <script src="node_modules/es6-shim/es6-shim.js"></script>
@@ -11,22 +11,22 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" type="text/css" href="styles.css">
-  </head>
-  <body>
-    <script>
-      System.config({
-        packages: {        
-          app: {
-            format: 'register',
-            defaultExtension: 'js'
-          }
+</head>
+<body>
+<script>
+    System.config({
+        packages: {
+            app: {
+                format: 'register',
+                defaultExtension: 'js'
+            }
         }
-      });
-      System.import('app.js')
+    });
+    System.import('app/main')
             .then(null, console.error.bind(console));
-    </script>
+</script>
 
-    <simple-api></simple-api>
+<my-app></my-app>
 
-  </body>
+</body>
 </html>
