@@ -5,7 +5,11 @@ import { Component } from "angular2/core";
   selector: 'simple-api',
   template: `
   <div>
-    Simple API
+    <h1>Simple API</h1>
+    <ul>
+      <li>Will need an Input to call API</li>
+      <li>Will need a Service to call that API</li>
+    </ul>
   </div>
   `
 })
