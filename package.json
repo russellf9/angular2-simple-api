@@ -6,8 +6,10 @@
   "scripts": {
     "tsc": "./node_modules/.bin/tsc",
     "tsc:w": "./node_modules/.bin/tsc -w",
+    "lite": "lite-server",
     "serve": "./node_modules/.bin/live-server --host=localhost --port=8080 .",
-    "go": "concurrent \"npm run tsc:w\" \"npm run serve\" "
+    "go": "concurrent \"npm run tsc:w\" \"npm run serve\" ",
+    "start": "concurrently \"npm run tsc:w\" \"npm run lite\" "
   },
   "repository": {
     "type": "git",
@@ -29,8 +31,9 @@
     "zone.js": "0.5.10"
   },
   "devDependencies": {
-    "concurrently": "1.0.0",
+    "concurrently": "^2.0.0",
     "live-server": "0.9.0",
+    "lite-server": "^2.1.0",
     "typescript": "^1.8.9",
     "typings":"^0.7.9"
   },
