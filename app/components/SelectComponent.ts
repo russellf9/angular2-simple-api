@@ -1,7 +1,7 @@
 /*
  * Angular
  */
-import {Component} from 'angular2/core';
+import {Component, Input} from 'angular2/core';
 import {CORE_DIRECTIVES} from 'angular2/common';
 
 
@@ -9,10 +9,11 @@ import {CORE_DIRECTIVES} from 'angular2/common';
     selector: 'select-component',
     template: `
   <div>
-    This will be the selector
+    <input [(ngModel)]="artist" placeholder="name" />
   </div>
   `
 })
 
 export class SelectComponent {
+    @Input() artist: any;
 }
