@@ -27,7 +27,11 @@ To run lite-server
 
 The live-server was a little flaky, so I'll see which is better.
 
+## SystemJS Issues
 
+System JS is a different bundle than Webpack, for instance had an issue with HTTP, and had to load the dependancy separately.
+
+<pre><script src="https://code.angularjs.org/2.0.0-beta.0/http.dev.js"></script></pre>
 
 
 ## Useful links
